@@ -47,19 +47,19 @@ let table =document.getElementById('table');
 Donation.prototype.render=function(){
   let trData =document.createElement('tr');
   table.appendChild(trData);
-  let td1 =document.createElement('td');
-  trData.appendChild(td1);
+  let tdName =document.createElement('td');
+  trData.appendChild(tdName);
 
-  let td2 =document.createElement('td');
-  trData.appendChild(td2);
+  let tdAmount =document.createElement('td');
+  trData.appendChild(tdAmount);
 
-  let td3 =document.createElement('td');
-  trData.appendChild(td3);
+  let tdAge =document.createElement('td');
+  trData.appendChild(tdAge);
 
 
-  td1.textContent=this.name;
-  td2.textContent=this.amount;
-  td3.textContent=this.age;
+  tdName.textContent=this.name;
+  tdAmount.textContent=this.amount;
+  tdAge.textContent=this.age;
 
 
 
